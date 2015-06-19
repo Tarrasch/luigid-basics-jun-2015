@@ -1,0 +1,30 @@
+digraph luigid {
+        A[style=filled]
+        B[style=filled]
+        C[style=filled]
+        D[style=filled]
+
+        A[color=gray]
+        B[color=gray]
+        C[color=gray]
+        D[color=gray]
+
+        A -> B
+        A -> C
+        B -> D
+        D -> W1[style=invis]  // To align only
+        W1 -> W2[style=invis]  // To align only
+
+        W1[shape=box]
+        W2[shape=box]
+        W1[fontname=courier]
+        W2[fontname=courier]
+        W1[color=gray]
+        W2[color=gray]
+
+        W1[style=""]
+        W2[style=invis]
+        W1[label="Worker 1                       "]
+        W2[label="Worker 2                       "]
+}
+
