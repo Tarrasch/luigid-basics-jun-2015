@@ -1,0 +1,26 @@
+digraph luigid {
+        A[style=filled]
+        B[style=filled]
+        C[style=filled]
+        D[style=filled]
+
+        A[color=yellow]
+        B[color=yellow]
+        C[color=blue]
+        D[color=red]
+
+
+	subgraph cluster_1 {
+		node [style=filled];
+		A;
+                B;
+		label = "Upstream failures";
+		color=red
+	}
+
+        A -> B
+        A -> C
+        B -> D
+}
+
+

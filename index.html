@@ -46,6 +46,16 @@ Monday, June 22, 2015
 				</section>
 
 				<section data-markdown>
+### Intended audience
+
+The intended audience are analysts and other luigi *users*. After watching
+these slides, you'll have a better idea of what luigi is actually doing each
+time you start it.  In particular the `complete()` checks and its interaction
+with the central luigi scheduler.
+
+				</section>
+
+				<section data-markdown>
 ## What is luigi?
 
 > Conceptually, Luigi is similar to GNU Make where you have certain
@@ -71,6 +81,13 @@ class MyTask(luigi.Task):
     def run(self):
         print self.some_parameter, 'world'
 ```
+
+				</section>
+
+				<section data-markdown>
+## Reminder of Central Scheduler
+
+![Central Scheduler](img/user_recs.png "luigid")
 
 				</section>
 
@@ -111,18 +128,35 @@ Current client-server API:
 					</section>
 
 				<section>
-				  <section data-markdown>
-![Gif for luigid](150.gif "luigid client server interaction")
+				  <section>
+<img data-src="img/150.gif" class="stretch">
 				  </section>
-				  <section data-markdown>
-![Gif for luigid](50.gif "luigid client server interaction")
+				  <section>
+<img data-src="img/50.gif" class="stretch">
 				  </section>
-				  <section data-markdown>
-![Gif for luigid](15.gif "luigid client server interaction")
+				  <section>
+<img data-src="img/15.gif" class="stretch">
 				  </section>
-				  <section data-markdown>
-![Gif for luigid](5.gif "luigid client server interaction")
+				  <section>
+<img data-src="img/5.gif" class="stretch">
 				  </section>
+				</section>
+
+				<section>
+				  <section>
+<h2> When tasks fail </h2>
+<img data-src="img/failed_task_dot.png" class="stretch">
+				  </section>
+				  <section>
+<img data-src="img/failed_graph.png " class="stretch">
+				  </section>
+				  <section>
+<img data-src="img/failed_statuses.png" class="stretch">
+				  </section>
+				  <section>
+<img data-src="img/failed_traceback.png" class="stretch">
+				  </section>
+
 				</section>
 
 				<section data-markdown>
@@ -132,9 +166,11 @@ Current client-server API:
 				<section data-markdown>
 ### Thanks for listening
 
-@Tarrasch on github
+[@Tarrasch](https://github.com/Tarrasch) on github
 
 http://tarrasch.github.io/luigid-basics-jun-2015/
+
+https://github.com/Tarrasch/luigid-basics-jun-2015
 				</section>
 
 			</div>

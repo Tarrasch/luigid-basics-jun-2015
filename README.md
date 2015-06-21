@@ -8,4 +8,6 @@ Random commands I used while developing:
 ./generate.zsh 150 && ./generate.zsh 50 && ./generate.zsh 15 && ./generate.zsh 5
 
 dot graph.dot -Tpng | feh -
+
+dot failed_task.dot -Tpng > ../img/failed_task_dot.png
 ```
