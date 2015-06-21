@@ -28,7 +28,7 @@ pad () {
 }
 
 finalize () {
-    convert -delay $1 -loop 0 inp-???.$INTF ../$1.gif
+    convert -delay $1 -loop 0 inp-???.$INTF ../img/$1.gif
 }
 
 flush
@@ -101,7 +101,7 @@ flush
 gol W1 label "$(pad 'Worker 1 - got work B')"
 go B color blue
 flush
-gol W1 label "$(pad 'Running B')"
+gol W1 label "$(pad 'Worker 1 - running B')"
 flush
 flush
 flush
